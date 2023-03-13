@@ -339,6 +339,11 @@ a{
   border: solid white;
   border-radius: 10px;
 }
+ @media (min-width: 991px){
+    .info-cont .container img{
+      width: 300px;
+    }    
+}
 @media (max-width: 767px){
   .info-cont{
     display: flex;
@@ -397,7 +402,9 @@ a{
   text-align: center;
   align-items: center;
 }
-.info-cont .images img {
+.info-cont .images img { 
+   display: flex;
+   flex-direction: column;
   padding-bottom: 20px;
   border-radius: 6px;
   margin-bottom: 10px; 
