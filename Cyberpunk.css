@@ -348,6 +348,11 @@ a{
   .info-cont h1{
     font-size: 20px;
   }
+  @media (min-width: 991px){
+.info-cont .container img{
+  width: 300px;
+}
+
 }
 .info-cont .container .about span{
   color: var(--main-color-h);
@@ -408,6 +413,8 @@ a{
     align-items: center;
   }
   .info-cont .images img{
+     display: flex;
+    flex-direction: column;
     width: 190px;
    border-radius: 6px;
    padding-bottom: 10px;
