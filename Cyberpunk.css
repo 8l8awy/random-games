@@ -350,7 +350,7 @@ a{
     font-size: 20px;
   }
 } 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .info-cont .container img {
     width: 200px;
   }
