@@ -335,7 +335,7 @@ a{
   font-family: bold;
 }
 .info-cont .container img{
-  width: 100%;
+  width: 40%;
   border: solid white;
   border-radius: 10px;
 }
@@ -349,6 +349,12 @@ a{
     font-size: 20px;
   }
 }
+@media (max-width: 991px) {
+  .info-cont .container img {
+    width: 200px;
+  }
+}
+
 .info-cont .container .about span{
   color: var(--main-color-h);
   font-size: 25px;
