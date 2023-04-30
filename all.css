@@ -156,7 +156,7 @@ a{
 }
 .header .main-nav > li > a:hover{
   color: var(--main-color);
-  background-color: #fafaf;
+  background-color: #fafafa;
 }
 .header .main-nav >li > a:hover::before {
  left: 0;
@@ -233,12 +233,10 @@ a{
   border-radius: 6px;
   overflow: hidden;
   width: 80%;
-  margin: 10px;
-  padding-bottom: 10px;
   transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
 .top .box:hover{
-  transform: translatey(-5%);
+  transform: translatey(-5px);
   box-shadow: 0 2px 15px rgb(0 0 0 /10%);
 }
 .top .box img{

@@ -241,7 +241,7 @@ a{
   padding-bottom: 120px;
 }
 .landing .text{
-  flex-basis: 1;
+  flex: 1;
 }
 @media(max-width: 991px){
   .landing .text{
@@ -316,12 +316,10 @@ a{
   border-radius: 6px;
   overflow: hidden;
   width: 80%;
-  margin: 10px;
-  padding-bottom: 10px;
   transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
 .top .box:hover{
-  transform: translatey(-10%);
+  transform: translateY(-10px);
   box-shadow: 0 2px 15px rgb(0 0 0 /20%);
 }
 .top .box img{
