@@ -314,6 +314,7 @@
     border-radius: 6px;
     overflow: hidden;
     max-width: 100%;
+      padding-bottom:20px;
     transition: transform var(--main-transition), box-shadow var(--main-transition);
   }
   .content-img .game-img .box:hover{
@@ -322,7 +323,6 @@
   .content-img .game-img img{
   width: 100%;
   max-width: 100%;
-  padding-right: 20px;
   }
   .download{
     padding-top: var(--main-padding);
