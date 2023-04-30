@@ -307,7 +307,7 @@
   }
   .content-img .game-img{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
     gap: 30px;
   }
   .content-img .game-img .box{
