@@ -309,12 +309,13 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 30px;
+      overflow: hidden;
   }
   .content-img .game-img .box{
     border-radius: 6px;
     overflow: hidden;
     max-width: 100%;
-      padding-bottom:20px;
+    padding-bottom:20px;
     transition: transform var(--main-transition), box-shadow var(--main-transition);
   }
   .content-img .game-img .box:hover{
