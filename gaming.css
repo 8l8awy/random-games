@@ -316,10 +316,6 @@
     max-width: 100%;
     transition: transform var(--main-transition), box-shadow var(--main-transition);
   }
-  @media(min-width: 768px){
-    .content-img .game-img .box{
-      width: 250px;
-    }
   .content-img .game-img .box:hover{
     transform: translatey(-10px);
   }
