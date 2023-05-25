@@ -232,11 +232,16 @@ a{
   box-shadow: 0 2px 15px rgb(0 0 0 /10%);
   border-radius: 6px;
   overflow: hidden;
-  width: 80%;
+  width: 100%;
   transition: transform var(--main-transition), box-shadow var(--main-transition);
 }
+@media (min-width: 991px) {
+  .top .box{
+    width: 80%;
+  }
+}
 .top .box:hover{
-  transform: translatey(-5px);
+  transform: translateY(-5px);
   box-shadow: 0 2px 15px rgb(0 0 0 /10%);
 }
 .top .box img{
@@ -315,6 +320,6 @@ a{
 }
 @keyframes moveing-arrow{
   100%{
-    transform: translatex(10px);
+    transform: translateX(10px);
   }
 }
