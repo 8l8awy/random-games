@@ -14,6 +14,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  background-color: #000000;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 }
@@ -47,8 +48,9 @@ a{
   }
 }
 .main-title{
+  color: white;
   margin: 0 auto 80px;
-  border: 3px solid black;
+  border: 3px solid rgb(255, 255, 255);
   padding: 10px 20px;
   font-size: 30px;
   width: fit-content;
@@ -82,15 +84,15 @@ a{
   animation: right-move 0.5s linear forwards;
 }
 .main-title:hover{
-  color: white;
-  border: 2px solid white;
+  color: rgb(240, 234, 234);
+  border: 2px solid rgb(253, 245, 245);
   transition-delay: 0.5s ;
 }
 .header{
   position: relative;
-  background-color: white;
-  box-shadow: 0 0 10px #ddd;
-  -webkit-box-shadow: 0 0 10px #ddd;
+  background-color: rgb(8, 8, 8);
+  box-shadow: 0 0 10px var(--main-color);
+  -webkit-box-shadow: 0 0 10px var(--main-color);
 }
 .header .container{
   display: flex;
@@ -133,7 +135,7 @@ a{
   align-items: center;
   height: 82px;
   position: relative;
-  color: black;
+  color: rgb(246, 241, 241);
   padding: 0 30px;
   transition: var(--main-transition);
   overflow: hidden;
@@ -157,7 +159,7 @@ a{
 }
 .header .main-nav > li > a:hover{
   color: var(--main-color);
-  background-color: #fafafa;
+  background-color: #000000;
 }
 .header .main-nav >li > a:hover::before {
  left: 0;
@@ -167,7 +169,7 @@ a{
   width: 100%;
   left: 0;
   padding: 20px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   border-bottom: 3px solid var(--main-color);
   z-index: -1;
   display: flex;
@@ -205,7 +207,7 @@ a{
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #F3F4FB;
+  background-color: var(--main-color);
   z-index: -1;
   transition: var(--main-transition);
 }
@@ -213,13 +215,14 @@ a{
   width: 100%;
 }
 .header .menu-g li a{
-  color: var(--main-color);
+  color: white;
   padding: 15px;
   display: block;
   font-size: 18px;
   font-weight: bold;
 }
 .landing{
+  color: white;
   position: relative;
 }
 .landing::before{
@@ -229,7 +232,7 @@ a{
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #ececec;
+  background-color: black;
   z-index: -1;
   transform: skewY( -6deg);
   transform-origin:  top left;
@@ -249,6 +252,7 @@ a{
   }
 }
 .landing .text h1{
+  color: var(--main-color);
   font-size: 35px;
   margin: 0;
   letter-spacing: -2;
@@ -262,7 +266,7 @@ a{
   font-size: 20px;
   line-height: 1.5;
   margin: 5px 0 0 ;
-  color: #333;
+  color: #f5efef;
   max-width: 500px;
 }
 @media(max-width: 991px){
@@ -285,6 +289,10 @@ a{
   .landing .image{
     display: none;
   } 
+  .landing{
+    background-image: url(cyberpunk-2077-quadra-type-66-avenger-04-720x1280.jpg);
+    background-size: cover;
+  }
 }
 .landing .go-down{
   color: var(--main-color);
@@ -302,6 +310,7 @@ a{
   animation: bouncing 1.5s infinite;
 }
 .top{
+  color: white;
   padding-top: var(--main-padding);
   padding-bottom: var(--main-padding);
   position: relative;
@@ -312,7 +321,7 @@ a{
   gap: 30px;
 }
 .top .box{
-  box-shadow: 0 2px 15px rgb(0 0 0 /10%);
+  box-shadow: 0 2px 15px rgba(246, 246, 246, 0.1);
   border-radius: 6px;
   overflow: hidden;
   width: 100%;
@@ -326,7 +335,7 @@ a{
 }
 .top .box:hover{
   transform: translateY(-10px);
-  box-shadow: 0 2px 15px rgb(0 0 0 /20%);
+  box-shadow: 0 2px 15px rgba(52, 74, 202, 0.5);
 }
 .top .box img{
   width: 100%;
@@ -336,6 +345,7 @@ a{
   padding: 20px;
 }
 .top .box .content h3{
+  color: var(--main-color);
   margin: 0;
 }
 .top .box .content p{
@@ -345,7 +355,7 @@ a{
 }
 .top .box .info{
   padding: 20px;
-  border-top: 1px solid #e6e6e7;
+  border-top: 1px solid var(--main-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -364,7 +374,7 @@ a{
     padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
     position: relative;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
   }
   .features .container{
     display: grid;
@@ -372,6 +382,7 @@ a{
     gap: 40px;
   }
   .features .box{
+    color: white;
   text-align: center;
   border: 1px solid #ccc;
   }
@@ -394,7 +405,7 @@ a{
     right: 0;
     border-style: solid;
     border-width: 0px 0px 170px 500px ;
-    border-color: transparent transparent white transparent;
+    border-color: transparent transparent rgb(0, 0, 0) transparent;
     transition: var(--main-transition);
   }
   .features .box .img-holder img{
@@ -441,6 +452,9 @@ a{
   .features .quality .img-holder::before{
   background-color: #a25c5ca8;
   }
+  .features .quality:hover{
+  box-shadow: 0 2px 15px rgba(184, 93, 93, 5);
+  }
   .features .quality h2::after{
   background-color: #a25c5c;
   }
@@ -455,6 +469,9 @@ a{
   .features .time .img-holder::before{
     background-color: #ff000082;
     }
+  .features .time:hover{
+  box-shadow: 0 2px 15px rgba(113, 4, 4, 5);
+  }
     .features .time h2::after{
     background-color: #f50606;
     }
@@ -468,6 +485,9 @@ a{
 
     .features .story .img-holder::before{
       background-color: #585673a1;
+      }
+      .features .story:hover{
+      box-shadow: 0 2px 15px rgba(59, 57, 130, 4);
       }
       .features .story h2::after{
       background-color: #585673;
