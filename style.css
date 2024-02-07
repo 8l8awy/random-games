@@ -41,6 +41,7 @@ a{
   .container{
     width: 970px;
   }
+
 }
 @media(min-width: 1200px){
   .container{
@@ -221,10 +222,12 @@ a{
   font-size: 18px;
   font-weight: bold;
 }
-.landing{
+ .landing{
   color: white;
   position: relative;
-}
+  background-image: url(black-and-pink-track-5k-tu-1366x768.jpg);
+  background-size: cover;
+} 
 .landing::before{
   content: "";
   position: absolute;
@@ -239,13 +242,13 @@ a{
 }
 .landing .container{
   min-height: calc(100vh - 82px);
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 }
 .landing .text{
   flex: 1;
-}
+} */
 @media(max-width: 991px){
   .landing .text{
     text-align: center;
@@ -292,6 +295,9 @@ a{
   .landing{
     background-image: url(cyberpunk-2077-quadra-type-66-avenger-04-720x1280.jpg);
     background-size: cover;
+  }
+  .slider-container ,.slider-controls{
+    display: none;
   }
 }
 .landing .go-down{
@@ -559,4 +565,79 @@ a{
     width: 200%;
     height: 200%;
   }
+}
+
+.slider-container{
+  margin: 10px auto ;
+  width: 800px;
+  height: 350px;
+  position: relative;
+  top: 100px;
+}
+
+.slider-container img{
+  width: 800px;
+  height: 350px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+}
+.slider-container img.active{
+  opacity: 1;
+}
+
+.slider-controls .prev, .slider-controls .next{
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 5px;
+  user-select: none;
+  width: 20%;
+  bottom: 20%;
+}
+.slider-controls .prev{
+  float: left;
+}
+.slider-controls .next{
+  float: right;
+}
+.slider-controls .prev.disabled,
+.slider-controls .next.disabled{
+  background-color: #1786e073;
+  cursor: no-drop;
+}
+.slider-controls{
+  width: 800px;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 100px;
+}
+.slider-controls .indicators{
+  width: 60%;
+  float: left;
+}
+.slider-controls .indicators ul{
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+.slider-controls .indicators ul li {
+  display: inline-block;
+  background-color: #f6f6f6;
+  color: #333;
+  font-weight: bold;
+  height: 28px;
+  width: 28px;
+  border-radius: 4px;
+  margin: 0 2px;
+  line-height: 28px;
+  cursor: pointer;
+}
+.slider-controls .indicators ul li.active{
+  background-color: var(--main-color);
+  color: #fff;
 }
