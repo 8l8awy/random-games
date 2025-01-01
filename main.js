@@ -84,4 +84,3 @@ function reAll() {
     bullet.classList.remove("active");
   });
 }
-import { SpeedInsights } from "@vercel/speed-insights/next"
